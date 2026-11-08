@@ -20,7 +20,7 @@ if bool(is_VIP):
         discount+=15
             
 
-if discount > 25:
-    discount = 25
+if discount > 10:
+    discount = 10
 
 print(f"Итоговая скидка: {discount}")    

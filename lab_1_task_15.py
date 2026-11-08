@@ -7,6 +7,9 @@ sales_data = [
     {"name": "Смартфон", "price": 25000, "quantity": 1},
 ]
 
+def add_new_element(sales_data:list,name: str,price: int,quantity: int)->list:
+        sales_data.append({"name": name, "price": price, "quantity": quantity})
+        return sales_data
 
 if not sales_data:
     assert False, "Список продаж пуст."

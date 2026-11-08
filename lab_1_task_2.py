@@ -1,7 +1,7 @@
 password = input("Введите пароль: ")
 
 if len(password) <=16:
-    assert False, "Слишком короткий"
+    print(f"Вы ввели пароль:{password}, пароль слишком короткий")
 if password.isalnum() == True:
-    assert False, "Слабый пароль"
-print("Надёжный пароль")    
+    print(f"Вы ввели пароль:{password}, пароль слабый пароль")
+print(f"Вы ввели пароль:{password}, надёжный пароль")    
