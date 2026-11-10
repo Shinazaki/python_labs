@@ -49,8 +49,8 @@ class Student:
 class Faculty:
     def __init__(self, name: str):
         self.name = name
-        self.departments = []
-        self.students = {}
+        self.departments :list[Department] = []
+        self.students :dict[int,Student]= {}
 
     def add_department(self, department: Department):
         self.departments.append(department)
