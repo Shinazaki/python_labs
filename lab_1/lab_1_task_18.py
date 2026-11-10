@@ -1,4 +1,5 @@
 from datetime import datetime
+
 def log_calls(filename: str):
     def decorator(func):
         def wrapper(*args):

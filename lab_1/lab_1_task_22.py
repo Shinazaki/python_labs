@@ -1,7 +1,6 @@
 def type_check(*args_types):
     def decorator(func):
         def wrapper(*args):
-            i = 0
             if len(args) != len(args_types):
                 assert False,  f"Ожидалось аргументов: {len(args_types)}, получено: {len(args)}"
             for arg, expected_type in zip(args, args_types):
