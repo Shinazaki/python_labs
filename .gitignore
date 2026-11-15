@@ -1,1 +1,4 @@
-output.txt
+__pycache__
+analyzing
+parsing
+sensor_scipy
